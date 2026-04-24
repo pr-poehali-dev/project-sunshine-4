@@ -4,39 +4,39 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Табличка / указатель",
+    price: "1 500",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "Акрил или ПВХ",
+      "Любой размер до А3",
+      "Печать или гравировка",
+      "Крепёж в комплекте",
+      "Срок: от 1 дня",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Вывеска под ключ",
+    price: "15 000",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "Объёмные буквы или световой короб",
+      "Разработка дизайна",
+      "LED-подсветка",
+      "Выезд и монтаж включены",
+      "Гарантия 2 года",
+      "Срок: от 5 дней",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Комплексное оформление",
     price: "По запросу",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
+      "Фасад + интерьер + навигация",
+      "Брендинг и дизайн-проект",
+      "Любые материалы и размеры",
       "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Гарантия 3 года",
     ],
     highlighted: false,
   },
@@ -60,10 +60,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">нужный формат</span> для вашего проекта
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Малый бизнес или крупная сеть — у нас есть решение под любой масштаб и бюджет
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Связаться с нами" : "Получить расчёт"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -121,8 +121,9 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Все изделия изготавливаются в{" "}
+            <span className="text-primary font-semibold">собственном производственном цеху</span> с{" "}
+            <span className="text-primary font-semibold">гарантией качества</span>
           </p>
         </div>
       </div>
